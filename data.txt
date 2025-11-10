@@ -1,0 +1,13 @@
+--- Product Sales Report ---
+Total Sales: 2200
+Average Sale (Floored): 366
+Sales Limit (Threshold): 500
+Sales Meeting/Beating Limit (>= 500): 2
+Sales Under Limit (< 500): 4
+Years Processed: 2
+
+Product Sales Breakdown:
+Year | Microphone | Speakers | Mixing Desk 
+------------------------------------------
+   1 |        300 |      150 |         700 
+   2 |        250 |      200 |         600 
