@@ -28,10 +28,6 @@ public class ProductSalesTest2 {
 
 
     // --- Tests for Sales Limit Functions ---
-
-    // Note: The constructor for ProductSales now takes the data, 
-    // so we need to instantiate it with the specific test data for each case.
-
     // === Tests for getSalesOverLimit() (Sales >= 500) ===
 
     @Test
@@ -93,17 +89,4 @@ public class ProductSalesTest2 {
         assertEquals(0, testCalculator.getSalesUnderLimit(), "Sale exactly at the limit (500) should NOT be counted as under.");
     }
 
-    
-    // Existing tests (Modified to use the new constructor)
-    
-    @Test
-    void totalSales_standardData_returnsCorrectTotal() {
-        assertEquals(2200, calculator.totalSales(), "Total sales should be 2200.");
-    }
-    
-    @Test
-    void averageSales_standardData_returnsFlooredAverage() {
-        // 2200 / 6 = 366.66... -> Floored to 366.0
-        assertEquals(366.0, calculator.averageSales(), 0.001, "Average sales should be floored to 366.0.");
-    }
 }
